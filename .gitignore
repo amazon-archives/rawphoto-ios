@@ -1,0 +1,18 @@
+# xcode noise
+*.swp
+*~.nib
+build/
+.xcodeproj/ !*.xcodeproj/project.pbxproj 
+
+*.mode1v3
+*.mode2v3
+xcuserdata
+
+# old skool
+.svn
+
+# osx noise
+.DS_Store
+profile
+
+#http://stackoverflow.com/questions/49478/git-ignore-file-for-xcode-projects

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
 
 @class FlipsideViewController;
 
@@ -14,10 +15,19 @@
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller;
 @end
 
-@interface FlipsideViewController : UIViewController
+@protocol DropboxLinkControllerDelegate
+- (void)dropboxLinkDidChange:(FlipsideViewController*) controller;
+@end
 
-@property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
+@interface FlipsideViewController : GAITrackedViewController
+
+@property (weak, nonatomic) id <FlipsideViewControllerDelegate,DropboxLinkControllerDelegate> delegate;
+
+@property (retain, nonatomic) IBOutlet UIButton *dropboxButton;
 
 - (IBAction)done:(id)sender;
+- (IBAction)toggleDropbox:(id)sender;
+- (IBAction)launchTwitter:(id)sender;
+- (IBAction)launchFacebook:(id)sender;
 
 @end
