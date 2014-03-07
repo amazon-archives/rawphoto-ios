@@ -11,7 +11,7 @@
 #import "CaptureSessionManager.h"
 #import <DropboxSDK/DropboxSDK.h>
 #import "AppDelegate.h"
-#import "LBSegmentedButton.h"
+#import "URBSegmentedControl.h"
 #import "GAITrackedViewController.h"
 
 @interface MainViewController : GAITrackedViewController <FlipsideViewControllerDelegate, UIPopoverControllerDelegate, AVCaptureVideoDataOutputSampleBufferDelegate, DBRestClientDelegate, DropboxLinkControllerDelegate, DropboxUserLoggedInDelegate>
@@ -28,7 +28,7 @@
 @property (retain, nonatomic) IBOutlet UILabel *versionLabel;
 @property (retain, nonatomic) IBOutlet UILabel *resolutionLabel;
 @property (retain,nonatomic) IBOutlet UISegmentedControl *deviceOptionsControl;
-@property (retain, nonatomic) IBOutlet LBSegmentedButton *resolutionOptionsControl;
+@property (retain, nonatomic) IBOutlet URBSegmentedControl *resolutionOptionsControl;
 - (IBAction)deviceSelected:(id)sender;
 - (IBAction)resolutionSelected:(id)sender;
 

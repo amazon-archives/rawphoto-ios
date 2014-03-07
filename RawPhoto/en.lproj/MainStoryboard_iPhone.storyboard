@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -9,11 +10,11 @@
             <objects>
                 <viewController id="2" customClass="MainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="10">
-                                <rect key="frame" x="282" y="509" width="18" height="19"/>
+                                <rect key="frame" x="278" y="526" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                 <state key="normal">
@@ -28,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TXF-B7-L83">
-                                <rect key="frame" x="220" y="234" width="80" height="80"/>
+                                <rect key="frame" x="220" y="244" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="take photo" image="takephoto.png">
@@ -43,7 +44,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="ILB-un-bPe">
-                                <rect key="frame" x="249" y="51" width="29" height="29"/>
+                                <rect key="frame" x="252" y="56" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -55,7 +56,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Version info" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QYL-f4-d7y">
-                                <rect key="frame" x="6" y="528" width="195" height="17"/>
+                                <rect key="frame" x="6" y="548" width="195" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.77647066119999997" green="0.72156864399999998" blue="1" alpha="1" colorSpace="deviceRGB"/>
@@ -63,7 +64,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="vAr-7H-H0v">
-                                <rect key="frame" x="4" y="3" width="161" height="30"/>
+                                <rect key="frame" x="4" y="18" width="161" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="First"/>
@@ -73,13 +74,13 @@
                                     <action selector="deviceSelected:" destination="2" eventType="valueChanged" id="zWr-tO-p2U"/>
                                 </connections>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" id="gac-rq-oS7" customClass="LBSegmentedButton">
-                                <rect key="frame" x="6" y="37" width="160" height="175"/>
+                            <view contentMode="scaleToFill" id="gac-rq-oS7" customClass="URBSegmentedControl">
+                                <rect key="frame" x="6" y="57" width="160" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1024x768" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W1u-1L-Zl0">
-                                <rect key="frame" x="173" y="7" width="139" height="18"/>
+                                <rect key="frame" x="173" y="22" width="139" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.77647066119999997" green="0.72156864399999998" blue="1" alpha="1" colorSpace="deviceRGB"/>
@@ -106,10 +107,10 @@
             <objects>
                 <viewController id="6" customClass="FlipsideViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="12">
+                            <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" id="12">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
@@ -123,36 +124,31 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lc1-Xz-VEY">
-                                <rect key="frame" x="20" y="500" width="121" height="44"/>
+                                <rect key="frame" x="20" y="533" width="99" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Link Dropbox">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="toggleDropbox:" destination="6" eventType="touchUpInside" id="xRU-sR-cTV"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="NXz-eb-Mmd">
-                                <rect key="frame" x="0.0" y="44" width="320" height="448"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="468"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">By default, RawPhoto will save to the app's "iTunes" folder. You can access this by going to iTunes on your computer when your device is connected, selecting the device, selecting "apps", and then scrolling down to the "File Sharing" section and selecting "RawPhoto". Images can be dragged out (and deleted).
+                                <string key="text">By default, RawPhoto will save to the app's "iTunes" folder. You can access this by going to iTunes on your computer when your device is connected, selecting the device, selecting "apps", and then scrolling down to the "File Sharing" section and selecting "RawPhoto". Images can be dragged out (and deleted).
 
 Alternatively, you can link RawPhoto to your Dropbox, and things should behave much more magically. RawPhoto uses the "sync" API, so it's restricted to its own subfolder of your dropbox, but that means you'll always know where your non-lossy images are! We recommend moving them from there to keep your device light. ;)
 
 Blindsight uses RawPhoto internally for gathering test data. Our flagship product is TextDetective, an accessible OCR specially developed for the blind.
 
-Note that we are using Google Analytics to track usage of this app; we collect which screen you look at, when you link or unlink Dropbox, what resolution you take pictures at, and whether you click through our social media buttons. We collect no personally identifiable information.</mutableString>
+Note that we are using Google Analytics to track usage of this app; we collect which screen you look at, when you link or unlink Dropbox, what resolution you take pictures at, and whether you click through our social media buttons. We collect no personally identifiable information.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZFU-rW-cTQ">
-                                <rect key="frame" x="200" y="500" width="45" height="44"/>
+                                <rect key="frame" x="218" y="525" width="33" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="Twitter_talk.png">
@@ -167,7 +163,7 @@ Note that we are using Google Analytics to track usage of this app; we collect w
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Y8b-cd-cY5">
-                                <rect key="frame" x="253" y="500" width="47" height="44"/>
+                                <rect key="frame" x="267" y="525" width="33" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="FB_talk.png">
@@ -198,41 +194,6 @@ Note that we are using Google Analytics to track usage of this app; we collect w
         <image name="Twitter_talk.png" width="32" height="32"/>
         <image name="takephoto.png" width="80" height="80"/>
     </resources>
-    <classes>
-        <class className="FlipsideViewController" superclassName="GAITrackedViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FlipsideViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="action" name="launchFacebook:"/>
-                <relationship kind="action" name="launchTwitter:"/>
-                <relationship kind="action" name="toggleDropbox:"/>
-                <relationship kind="outlet" name="dropboxButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="GAITrackedViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GAITrackedViewController.h"/>
-        </class>
-        <class className="LBSegmentedButton" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LBSegmentedButton.h"/>
-            <relationships>
-                <relationship kind="outlet" name="target"/>
-            </relationships>
-        </class>
-        <class className="MainViewController" superclassName="GAITrackedViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="deviceSelected:"/>
-                <relationship kind="action" name="resolutionSelected:"/>
-                <relationship kind="action" name="takePicture:"/>
-                <relationship kind="outlet" name="cameraIndicator" candidateClass="UIView"/>
-                <relationship kind="outlet" name="deviceOptionsControl" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="resolutionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="resolutionOptionsControl" candidateClass="LBSegmentedButton"/>
-                <relationship kind="outlet" name="shutterButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="versionLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

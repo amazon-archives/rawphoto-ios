@@ -10,7 +10,6 @@
 		2D5E7F651717387500739A40 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5E7F641717387500739A40 /* Security.framework */; };
 		2D5E7F671717388B00739A40 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5E7F661717388B00739A40 /* QuartzCore.framework */; };
 		2D5E7F6D17173B6300739A40 /* CaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E7F6C17173B6300739A40 /* CaptureSessionManager.m */; };
-		2D5E7F7017173DC700739A40 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E7F6F17173DC700739A40 /* MBProgressHUD.m */; };
 		2D5E7F731717473500739A40 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5E7F721717473500739A40 /* AVFoundation.framework */; };
 		2D5E7F75171748E100739A40 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5E7F74171748E100739A40 /* CoreVideo.framework */; };
 		2D5E7F771717490100739A40 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5E7F761717490100739A40 /* CoreMedia.framework */; };
@@ -23,7 +22,6 @@
 		2D5E7F881718A22000739A40 /* takephoto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5E7F861718A21F00739A40 /* takephoto@2x.png */; };
 		2D5E7F891718A22000739A40 /* takephoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5E7F871718A22000739A40 /* takephoto.png */; };
 		2D5E7F901718AEF800739A40 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E7F8F1718AEF800739A40 /* UIDevice-Hardware.m */; };
-		2D7E419B171A7B1300C57118 /* LBSegmentedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E419A171A7B1300C57118 /* LBSegmentedButton.m */; };
 		2DAE1FC717163689003BB408 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAE1FC617163689003BB408 /* UIKit.framework */; };
 		2DAE1FC917163689003BB408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAE1FC817163689003BB408 /* Foundation.framework */; };
 		2DAE1FCB17163689003BB408 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAE1FCA17163689003BB408 /* CoreGraphics.framework */; };
@@ -37,6 +35,8 @@
 		2DAE1FE31716368A003BB408 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DAE1FE11716368A003BB408 /* MainStoryboard_iPad.storyboard */; };
 		2DAE1FE61716368A003BB408 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE1FE51716368A003BB408 /* MainViewController.m */; };
 		2DAE1FE91716368A003BB408 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAE1FE81716368A003BB408 /* FlipsideViewController.m */; };
+		2DDCD2D718C8FB53009CC8F9 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCD2D418C8FB53009CC8F9 /* MBProgressHUD.m */; };
+		2DDCD2D818C8FB53009CC8F9 /* URBSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDCD2D618C8FB53009CC8F9 /* URBSegmentedControl.m */; };
 		2DE34739171C75C5002FD1DC /* FB_talk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE34735171C75C5002FD1DC /* FB_talk.png */; };
 		2DE3473A171C75C5002FD1DC /* FB_talk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE34736171C75C5002FD1DC /* FB_talk@2x.png */; };
 		2DE3473B171C75C5002FD1DC /* Twitter_talk.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE34737171C75C5002FD1DC /* Twitter_talk.png */; };
@@ -52,8 +52,6 @@
 		2D5E7F661717388B00739A40 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2D5E7F6B17173B6300739A40 /* CaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSessionManager.h; sourceTree = "<group>"; };
 		2D5E7F6C17173B6300739A40 /* CaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureSessionManager.m; sourceTree = "<group>"; };
-		2D5E7F6E17173DC700739A40 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../MBProgressHUD.h; sourceTree = "<group>"; };
-		2D5E7F6F17173DC700739A40 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../MBProgressHUD.m; sourceTree = "<group>"; };
 		2D5E7F721717473500739A40 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2D5E7F74171748E100739A40 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		2D5E7F761717490100739A40 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -67,8 +65,6 @@
 		2D5E7F871718A22000739A40 /* takephoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = takephoto.png; sourceTree = "<group>"; };
 		2D5E7F8E1718AEF800739A40 /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Hardware.h"; sourceTree = "<group>"; };
 		2D5E7F8F1718AEF800739A40 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
-		2D7E4199171A7B1300C57118 /* LBSegmentedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSegmentedButton.h; sourceTree = "<group>"; };
-		2D7E419A171A7B1300C57118 /* LBSegmentedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSegmentedButton.m; sourceTree = "<group>"; };
 		2DAE1FC317163689003BB408 /* RawPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RawPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DAE1FC617163689003BB408 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2DAE1FC817163689003BB408 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +84,10 @@
 		2DAE1FE51716368A003BB408 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		2DAE1FE71716368A003BB408 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
 		2DAE1FE81716368A003BB408 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		2DDCD2D318C8FB53009CC8F9 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		2DDCD2D418C8FB53009CC8F9 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2DDCD2D518C8FB53009CC8F9 /* URBSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URBSegmentedControl.h; sourceTree = "<group>"; };
+		2DDCD2D618C8FB53009CC8F9 /* URBSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URBSegmentedControl.m; sourceTree = "<group>"; };
 		2DE34735171C75C5002FD1DC /* FB_talk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FB_talk.png; sourceTree = "<group>"; };
 		2DE34736171C75C5002FD1DC /* FB_talk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FB_talk@2x.png"; sourceTree = "<group>"; };
 		2DE34737171C75C5002FD1DC /* Twitter_talk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter_talk.png; sourceTree = "<group>"; };
@@ -131,14 +131,14 @@
 		2D5E7F7117173DD400739A40 /* Supporting Code */ = {
 			isa = PBXGroup;
 			children = (
+				2DDCD2D318C8FB53009CC8F9 /* MBProgressHUD.h */,
+				2DDCD2D418C8FB53009CC8F9 /* MBProgressHUD.m */,
+				2DDCD2D518C8FB53009CC8F9 /* URBSegmentedControl.h */,
+				2DDCD2D618C8FB53009CC8F9 /* URBSegmentedControl.m */,
 				2D5E7F8E1718AEF800739A40 /* UIDevice-Hardware.h */,
 				2D5E7F8F1718AEF800739A40 /* UIDevice-Hardware.m */,
-				2D5E7F6E17173DC700739A40 /* MBProgressHUD.h */,
-				2D5E7F6F17173DC700739A40 /* MBProgressHUD.m */,
 				2D5E7F6B17173B6300739A40 /* CaptureSessionManager.h */,
 				2D5E7F6C17173B6300739A40 /* CaptureSessionManager.m */,
-				2D7E4199171A7B1300C57118 /* LBSegmentedButton.h */,
-				2D7E419A171A7B1300C57118 /* LBSegmentedButton.m */,
 			);
 			name = "Supporting Code";
 			sourceTree = "<group>";
@@ -265,6 +265,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Blindsight;
+				TargetAttributes = {
+					2DAE1FC217163689003BB408 = {
+						DevelopmentTeam = HHBT96X2EX;
+					};
+				};
 			};
 			buildConfigurationList = 2DAE1FBE17163689003BB408 /* Build configuration list for PBXProject "RawPhoto" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -320,9 +325,9 @@
 				2DAE1FE61716368A003BB408 /* MainViewController.m in Sources */,
 				2DAE1FE91716368A003BB408 /* FlipsideViewController.m in Sources */,
 				2D5E7F6D17173B6300739A40 /* CaptureSessionManager.m in Sources */,
-				2D5E7F7017173DC700739A40 /* MBProgressHUD.m in Sources */,
 				2D5E7F901718AEF800739A40 /* UIDevice-Hardware.m in Sources */,
-				2D7E419B171A7B1300C57118 /* LBSegmentedButton.m in Sources */,
+				2DDCD2D818C8FB53009CC8F9 /* URBSegmentedControl.m in Sources */,
+				2DDCD2D718C8FB53009CC8F9 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +375,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -387,7 +391,7 @@
 		2D5E7F8C1718AA1D00739A40 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: The Blindsight Corporation";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kaolin Fire (AEFL8B65JD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -402,7 +406,6 @@
 					"\"$(SRCROOT)/RawPhoto/GoogleAnalytics\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7FF4C644-0554-43A6-93E8-7488403DF4CF";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Ad Hoc";
@@ -419,7 +422,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -451,7 +453,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -468,7 +469,7 @@
 		2DAE1FED1716368A003BB408 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kaolin Fire (D87WW2C4WR)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kaolin Fire (AEFL8B65JD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -482,7 +483,6 @@
 					"\"$(SRCROOT)/RawPhoto/GoogleAnalytics\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "A3835C29-178D-4697-89E1-DED6FB1D2A8B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -490,8 +490,7 @@
 		2DAE1FEE1716368A003BB408 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kaolin Fire (AEFL8B65JD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -506,8 +505,6 @@
 					"\"$(SRCROOT)/RawPhoto/GoogleAnalytics\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

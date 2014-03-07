@@ -46,7 +46,7 @@ static NSDictionary *video_device_presets;
 
 - (void) deviceSelected:(id)sender {
 	[self updateResolutionOptions];
-	[_resolutionOptionsControl setSelectedSegment:-1];
+	[_resolutionOptionsControl setSelectedSegmentIndex:-1];
 }
 
 - (void) resolutionSelected:(id)sender {
@@ -58,7 +58,9 @@ static NSDictionary *video_device_presets;
 			selectedDevice = video_device;
 		}
 	}
-	NSString *selectedPreset = [video_device_presets valueForKey:[_resolutionOptionsControl selectedValue]];
+	NSInteger selectedIndex = [_resolutionOptionsControl selectedSegmentIndex];
+	NSString *selectedPresetString = [_resolutionOptionsControl titleForSegmentAtIndex:selectedIndex];
+	NSString *selectedPreset = [video_device_presets valueForKey:selectedPresetString];
 	[[self captureManager] setVideoDevice:selectedDevice andPreset:selectedPreset];
 	id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
 	[tracker sendEventWithCategory:@"uiAction"
@@ -71,22 +73,20 @@ static NSDictionary *video_device_presets;
 -(void) updateResolutionOptions {
 	NSString *selectedDevice = [_deviceOptionsControl titleForSegmentAtIndex:[_deviceOptionsControl selectedSegmentIndex]];
 	NSArray *video_devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
-	NSMutableArray *titles = [[NSMutableArray alloc] init];
-	NSMutableArray *selectors = [[NSMutableArray alloc] init];
+	[_resolutionOptionsControl removeAllSegments];
 	for (AVCaptureDevice *video_device in video_devices) {
 		if ([[video_device localizedName] isEqualToString:selectedDevice]) {
 			for (NSString *preset_key in [[MainViewController video_device_presets] allKeys]) {
 				//do what you want to do with items
 				if ([video_device supportsAVCaptureSessionPreset:[video_device_presets objectForKey:preset_key]]) {
-					[selectors addObject:@"resolutionSelected:"];
-					[titles addObject:preset_key];
+					[_resolutionOptionsControl insertSegmentWithTitle:preset_key atIndex:[_resolutionOptionsControl numberOfSegments] animated:NO];
 				}
 			}
 		}
 	}
-	[_resolutionOptionsControl setData:[NSDictionary dictionaryWithObjects:selectors forKeys:titles]];
-	[_resolutionOptionsControl setTarget:self];
-	[_resolutionOptionsControl setSelectedSegment:0];
+	CGRect optionsFrame = _resolutionOptionsControl.frame;
+	[_resolutionOptionsControl setFrame:CGRectMake(optionsFrame.origin.x, optionsFrame.origin.y, optionsFrame.size.width, [_resolutionOptionsControl numberOfSegments] * 25)];
+//	[_resolutionOptionsControl sizeToFit];
 }
 
 - (void) startCamera {
@@ -222,6 +222,13 @@ static NSDictionary *video_device_presets;
 		}
 	}
 	[_deviceOptionsControl sizeToFit];
+	[_resolutionOptionsControl setSegmentedControlStyle:UISegmentedControlStylePlain]; // Bezeled, Bar, Bordered, Plain
+	[_resolutionOptionsControl setLayoutOrientation:URBSegmentedControlOrientationVertical];
+	[_resolutionOptionsControl setShowsGradient:NO];
+	[_resolutionOptionsControl setBackgroundColor:[UIColor clearColor]];
+	[_resolutionOptionsControl addTarget:self action:@selector(resolutionSelected:) forControlEvents:UIControlEventValueChanged];
+	[_resolutionOptionsControl setAlpha:0.8];
+	[_resolutionOptionsControl setSegmentBackgroundColor:[[[[UIApplication sharedApplication] delegate] window] tintColor]];
 }
 
 -(void)resolutionUpdated:(NSNotification*)sender {
