@@ -16,3 +16,5 @@ xcuserdata
 profile
 
 #http://stackoverflow.com/questions/49478/git-ignore-file-for-xcode-projects
+RawPhoto.xcodeproj/project.xcworkspace/xcshareddata/
+tmp/
